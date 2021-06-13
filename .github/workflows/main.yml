@@ -29,6 +29,7 @@ jobs:
         run: |
           cd ..
           sudo apt update && sudo apt install wget -y && wget https://cli.chargedcloud.com.br/latest/chargedcli
+          chmod +x ./chargedcli
           cd StaticSiteDeployExample
           ../chargedcli --name site.com.br --runtime webstatic
           
